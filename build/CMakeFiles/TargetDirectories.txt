@@ -1,3 +1,0 @@
-/home/workspace/SFND_Unscented_Kalman_Filter/build/CMakeFiles/rebuild_cache.dir
-/home/workspace/SFND_Unscented_Kalman_Filter/build/CMakeFiles/ukf_highway.dir
-/home/workspace/SFND_Unscented_Kalman_Filter/build/CMakeFiles/edit_cache.dir
