@@ -3,19 +3,7 @@ Sensor Fusion UKF Highway Project Starter Code
 
 <img src="media/ukf_highway_tracked.gif" width="700" height="400" />
 
-In this project you will implement an Unscented Kalman Filter to estimate the state of multiple cars on a highway using noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
-
-The main program can be built and ran by doing the following from the project top directory.
-
-1. mkdir build
-2. cd build
-3. cmake ..
-4. make
-5. ./ukf_highway
-
-Note that the programs that need to be written to accomplish the project are src/ukf.cpp, and src/ukf.h
-
-The program main.cpp has already been filled out, but feel free to modify it.
+In this project, I have implemented an Unscented Kalman Filter to estimate the state of multiple cars on a highway using noisy lidar and radar measurements. Tunning of process noise due to longitudinal and yaw acceleration is done as well as init process matrix is tunned as per the first measurement from sensor. Furthermore, RMSE values are calculated and compared with threshold RMSE to check the correct tunning of above parameters. 
 
 <img src="media/ukf_highway.png" width="700" height="400" />
 
@@ -63,14 +51,6 @@ Please stick to [Google's C++ style guide](https://google.github.io/styleguide/c
 
 ## Generating Additional Data
 
-This is optional!
-
 If you'd like to generate your own radar and lidar modify the code in `highway.h` to alter the cars. Also check out `tools.cpp` to
 change how measurements are taken, for instance lidar markers could be the (x,y) center of bounding boxes by scanning the PCD environment
 and performing clustering. This is similar to what was done in Sensor Fusion Lidar Obstacle Detection.
-
-## Project Instructions and Rubric
-
-This information is only accessible by people who are already enrolled in Sensor Fusion. 
-If you are enrolled, see the project page in the classroom
-for instructions and the project rubric.
