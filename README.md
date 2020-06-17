@@ -1,8 +1,8 @@
 # Sensor Fusion UKF Highway Project
 
-<img src="media/ukf_highway_tracked.gif" width="700" height="400" />
-
 In this project, I have implemented an Unscented Kalman Filter to estimate the state of multiple cars on a highway using noisy lidar and radar measurements. Tunning of process noise due to longitudinal and yaw acceleration is done as well as init process matrix is tunned as per the first measurement from sensor. Furthermore, RMSE values are calculated and compared with threshold RMSE to check the correct tunning of above parameters. 
+
+<img src="media/ukf_highway_tracked.gif" width="700" height="400" />
 
 ---
 
