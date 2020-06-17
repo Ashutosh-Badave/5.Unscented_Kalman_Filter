@@ -1,16 +1,17 @@
-# SFND_Unscented_Kalman_Filter
-Sensor Fusion UKF Highway Project Starter Code
+# Sensor Fusion UKF Highway Project
 
 <img src="media/ukf_highway_tracked.gif" width="700" height="400" />
 
 In this project, I have implemented an Unscented Kalman Filter to estimate the state of multiple cars on a highway using noisy lidar and radar measurements. Tunning of process noise due to longitudinal and yaw acceleration is done as well as init process matrix is tunned as per the first measurement from sensor. Furthermore, RMSE values are calculated and compared with threshold RMSE to check the correct tunning of above parameters. 
 
-<img src="media/ukf_highway.png" width="700" height="400" />
+---
 
 `main.cpp` is using `highway.h` to create a straight 3 lane highway environment with 3 traffic cars and the main ego car at the center. 
 The viewer scene is centered around the ego car and the coordinate system is relative to the ego car as well. The ego car is green while the 
 other traffic cars are blue. The traffic cars will be accelerating and altering their steering to change lanes. Each of the traffic car's has
 it's own UKF object generated for it, and will update each indidual one during every time step. 
+
+<img src="media/ukf_highway.png" width="700" height="400" />
 
 The red spheres above cars represent the (x,y) lidar detection and the purple lines show the radar measurements with the velocity magnitude along the detected angle. The Z axis is not taken into account for tracking, so you are only tracking along the X/Y axis.
 
